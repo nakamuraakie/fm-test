@@ -11,3 +11,13 @@
 
 ### Laravel環境構築
 
+docker-compose exec php bash
+composer install
+composer require livewire/livewire
+cp .env.example .env
+.env ファイルの一部を以下のように編集
+
+DB_HOST=mysql
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
