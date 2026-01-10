@@ -48,3 +48,7 @@ DB_PASSWORD=laravel_pass
 
 ## URL
 
+## ER図
+
+![ER図](docs/er.png)
+
