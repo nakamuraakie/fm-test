@@ -1,6 +1,6 @@
 # coachtechフリマ
 
-## 環境構築
+### 環境構築
 1.git clone git@github.com:Estra-Coachtech/laravel-docker-template.git
 
 2.cd laravel-docker-template
@@ -9,5 +9,5 @@
 
 4.docker-compose up -d --build
 
-## Laravel環境構築
+### Laravel環境構築
 
