@@ -46,7 +46,16 @@ DB_PASSWORD=laravel_pass
 
 ・Laravel 8
 
+・nginx 1.21.1
+
 ## URL
+
+・ユーザー登録画面: http://localhost/register
+
+・商品一覧画面: http://localhost/
+
+・phpMyAdmin: http://http://localhost:8080
+
 
 ## ER図
 
