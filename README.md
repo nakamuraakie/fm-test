@@ -54,7 +54,7 @@ DB_PASSWORD=laravel_pass
 
 ・商品一覧画面: http://localhost/
 
-・phpMyAdmin: http://http://localhost:8080
+・phpMyAdmin: http://http:/localhost:8080
 
 
 ## ER図
