@@ -56,8 +56,9 @@ DB_PASSWORD=laravel_pass
 
 ## userについて
 
-役割　　名前　　　 メールアドレス　　　　　　　　　 パスワード　主なテスト操作
+
 出品者　山田 太郎　yamada.taro@example.com　password　商品の出品
+
 購入者　佐藤 花子　sato.hanako@example.com　password　商品の購入、コメント投稿、いいね
 
 ## ER図
