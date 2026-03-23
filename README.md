@@ -35,8 +35,6 @@ DB_PASSWORD=laravel_pass
 
 8.php artisan db:seed
 
-## user のログイン用初期データ
-
 
 ## 使用技術
 
@@ -46,7 +44,22 @@ DB_PASSWORD=laravel_pass
 
 ・Laravel 8
 
+・nginx 1.21.1
+
 ## URL
+
+・ユーザー登録画面: http://localhost/register
+
+・商品一覧画面: http://localhost/
+
+・phpMyAdmin: http://localhost:8080/
+
+## userについて
+
+
+出品者　山田 太郎　yamada.taro@example.com　password　商品の出品
+
+購入者　佐藤 花子　sato.hanako@example.com　password　商品の購入、コメント投稿、いいね
 
 ## ER図
 
