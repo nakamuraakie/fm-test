@@ -1,0 +1,152 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ---- base ---- */
+.mypage-wrap {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 24px 24px 64px;
+    box-sizing: border-box;
+}
+
+/* ---- header area (icon + name + edit button) ---- */
+.mypage-head {
+    display: flex;
+    align-items: center;
+    gap: 600px;
+    /* ここで間隔調整 */
+    padding: 40px 0;
+
+    width: fit-content;
+    /* 中身の幅にする */
+    margin: 0 auto;
+    /* 中央寄りに置く */
+}
+
+.mypage-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.mypage-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mypage-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mypage-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* edit button */
+.mypage-edit-btn {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.mypage-edit-btn:hover {
+    opacity: 0.7;
+}
+
+/* ---- tabs ---- */
+.tab-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.tab-link.active {
+    color: red;
+    /* ← 選択時は赤 */
+    padding-bottom: 6px;
+}
+
+.tab-link:hover {
+    opacity: 0.7;
+}
+
+
+.tab-menu {
+    border-bottom: 2px solid #000;
+    padding: 12px 0 12px 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* ---- list & cards ---- */
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 1行5つ */
+    gap: 24px;
+    padding-top: 40px;
+    justify-items: center;
+    /* 商品を中央に配置 */
+}
+
+.item-card {
+    width: 290px;
+    flex: 0 0 290px;
+}
+
+.item-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    display: block;
+    background: #f5f5f5;
+}
+
+.item-name {
+    margin-top: 8px;
+    font-size: 20px;
+    
+    text-decoration: none;
+
+}
+
+.sold {
+    display: inline-block;
+    margin-top: 6px;
+    color: red;
+    font-weight: bold;
+}
+

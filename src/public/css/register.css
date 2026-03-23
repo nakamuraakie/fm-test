@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img {
+    height: 40px;
+}
+
+main {
+    width: 60%;
+    max-width: 600px;
+    min-width: 320px;
+    margin: 50px auto;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+    border: 1px solid #222;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #E03E00;
+}
+
+
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-link:hover {
+    color: #0056b3;
+}
+
+
+.error {
+    color: red;
+}
+
+/* 1400px ～ 1540px のPC用レスポンシブ */
+@media (min-width: 1400px) and (max-width: 1540px) {
+
+/* mainの幅を広げ、フォームが中央揃えになるように調整 */
+    main {
+        width: 50%;
+        /* 幅を50%に変更 */
+        max-width: 700px;
+        /* 最大幅を700pxに */
+    }
+
+    /* ヘッダー内の画像を少し小さくして調整 */
+    header img {
+        height: 35px;
+    }
+
+    /* フォームフィールドの高さ調整 */
+    form input {
+        height: 40px;
+        /* 入力フィールドの高さを少し大きく */
+        padding: 15px;
+    }
+
+    /* ボタンのサイズ調整 */
+    .register-btn {
+        font-size: 18px;
+        /* フォントサイズを少し大きく */
+        padding: 15px;
+    }
+}
+
+/* 1400px ～ 1540px のPC用レスポンシブ */
+@media (min-width: 1400px) and (max-width: 1540px) {
+
+    /* ヘッダー部分の間隔調整 */
+    .mypage-head {
+        gap: 200px;
+        /* 間隔を調整して適切に中央揃え */
+    }
+
+    /* アイテムリストの列数を調整 */
+    .items-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 1行3つ */
+    }
+
+    /* アイテムカードのサイズ調整 */
+    .item-card {
+        width: 250px;
+        /* 1つのカードの幅を調整 */
+    }
+
+    /* アイコンと名前の配置調整 */
+    .mypage-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mypage-name {
+        font-size: 16px;
+        /* 名前のフォントサイズを調整 */
+    }
+
+    /* ボタンの調整 */
+    .mypage-edit-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

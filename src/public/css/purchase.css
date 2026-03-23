@@ -1,0 +1,271 @@
+
+.purchase {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+    box-sizing: border-box;
+}
+
+.purchase-grid {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 24px;
+    align-items: start;
+}
+
+
+/* -------------------------
+   Left
+------------------------- */
+.purchase-left {
+    background: #fff;
+    padding: 29px;
+}
+
+/* 左側のブロック間隔を統一 */
+.purchase-section {
+    margin-bottom: 60px;
+}
+
+/* 画像 + 商品名/金額 横並び（詰め気味） */
+.purchase-item-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* ここで画像と文字の間隔調整 */
+}
+
+.purchase-item-image img {
+    width: 160px;
+    /* 画像サイズ */
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    background: #f6f6f6;
+}
+
+/* 右側テキスト */
+.purchase-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* 商品名と金額の間隔 */
+}
+
+.purchase-item-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.purchase-item-price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* 区切り線：黒でくっきり */
+.purchase-divider {
+    border: none;
+    border-top: 1px solid #000;
+
+}
+
+/* 見出し */
+.purchase-title {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.purchase-select {
+    width: 70%;
+    height: 52px;
+    padding: 0 14px;
+    font-size: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    appearance: none;
+    /* ブラウザ標準矢印を消す */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+}
+
+/* 配送先：見出し行（変更するを右上） */
+.purchase-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.purchase-link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #3d76e9;
+    text-decoration: none;
+}
+
+.purchase-address p {
+    margin: 6px 0;
+}
+
+.error {
+    color: #ff5655;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* -------------------------
+   Right
+------------------------- */
+
+.purchase-right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* 枠とボタンの距離 */
+    margin-top: 35px;
+}
+
+.purchase-summary {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 29px;
+    position: sticky;
+    top: 16px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 12px 0;
+}
+
+.summary-muted {
+    color: #777;
+}
+
+.purchase-button-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.purchase-submit:disabled,
+.purchase-submit.is-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.purchase-submit {
+    position: relative;
+    z-index: 9999;
+    /* 前面に出す */
+    width: 80%;
+    height: 40px;
+    margin-top: 16px;
+    background: #df4444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.purchase-button-wrap {
+    position: relative;
+    z-index: 10;
+    /* 前面に出す */
+}
+
+.purchase-submit:hover {
+    opacity: 0.85;
+}
+
+.purchase .error {
+    color: #ff5655;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+
+
+/* 1400px ～ 1540px のPC用レスポンシブ */
+@media (min-width: 1400px) and (max-width: 1540px) {
+
+    /* グリッドレイアウトの調整 */
+    .purchase-grid {
+        grid-template-columns: 5fr 5fr;
+        /* 左右のカラム幅を均等に調整 */
+    }
+
+    /* 購入画面左側のパディングを調整 */
+    .purchase-left {
+        padding: 24px;
+    }
+
+    /* 商品名と金額の間隔を調整 */
+    .purchase-item-top {
+        gap: 12px;
+        /* 画像とテキストの間隔を広げる */
+    }
+
+    /* 商品画像サイズの調整 */
+    .purchase-item-image img {
+        width: 140px;
+        /* 画像を少し小さく調整 */
+    }
+
+    /* 商品名・価格のフォントサイズ調整 */
+    .purchase-item-name {
+        font-size: 16px;
+    }
+
+    .purchase-item-price {
+        font-size: 14px;
+    }
+
+    /* 右側の購買サマリーの調整 */
+    .purchase-summary {
+        padding: 24px;
+    }
+
+    .purchase-submit {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .purchase-block-head {
+        gap: 8px;
+        /* 配送先の間隔調整 */
+    }
+
+    /* セレクトボックスのサイズ調整 */
+    .purchase-select {
+        width: 80%;
+        /* 幅を広げる */
+    }
+
+    .purchase-submit:disabled {
+        font-size: 14px;
+        /* ボタンのフォントサイズ調整 */
+    }
+}

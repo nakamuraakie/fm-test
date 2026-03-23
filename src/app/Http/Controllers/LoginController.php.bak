@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+
+
+
+class LoginController extends Controller
+{
+    protected function authenticated(Request $request, $user)
+    {
+
+    Log::info('User logged in', ['user_id' => $user->id, 'profile_completed' => $user->profile_completed]);
+
+        // 初回ログインの場合、プロフィール設定が完了していない場合はプロフィール設定画面にリダイレクト
+        if ($user->profile_completed == false) {
+            Log::info('Redirecting to profile.edit because profile is not completed.');
+            return redirect()->route('profile.mypage');  // プロフィール設定画面にリダイレクト
+        }
+
+        // それ以外の場合（2回目以降のログイン）は商品一覧画面にリダイレクト
+        return redirect()->route('index');  // 商品一覧画面にリダイレクト
+    }
+
+}

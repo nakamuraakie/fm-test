@@ -1,0 +1,206 @@
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+.create-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    box-sizing: border-box;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.form-group {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
+.section-line {
+    width: 100%;
+    max-width: 700px;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 auto 32px;
+}
+
+.section-label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.form-input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 100%;
+}
+
+.form-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 20 20'><text x='2' y='15' font-size='14'>▼</text></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+
+    padding-right: 40px;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.textarea {
+    min-height: 125px;
+    resize: vertical;
+    padding-top: 12px;
+}
+
+.image-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px dashed #ccc;
+    padding: 32px 20px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.image-preview-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-select-btn {
+    padding: 10px 24px;
+    border: 1px solid #ff6b6b;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #ff6b6b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-select-btn:hover {
+    opacity: 0.9;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.category-input {
+    display: none;
+}
+
+.category-button span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ff6b6b;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #ff6b6b;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.category-input:checked+span {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.price-input-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.yen-mark {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #555;
+}
+
+.price-input {
+    padding-left: 32px;
+}
+
+.submit-area {
+    margin-top: 48px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.95;
+}
+
+.error-message {
+    margin-top: 8px;
+    color: #ff4d4f;
+    font-size: 14px;
+}
